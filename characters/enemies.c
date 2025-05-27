@@ -18,18 +18,14 @@ List createEnemies() {
     return aliensList;
 }
 
-void moveEnemies(List *enemies, int way) {
+void moveEnemy(Dot *alien, int way) {
     int horizontalStep = way, verticalStep = way == 0 ? 1 : 0;
     Dot errase = {{0, 0}, ' '};
-    LinkedList *currentEnemy = enemies->list->prev;
-
-    for (int i = 0; i < enemies->count; ++i, currentEnemy = currentEnemy->prev) {
-        Dot *alien = (Dot *)currentEnemy->data;
-        errase.position = alien->position;
-        printDot(errase);
-        alien->position.X += horizontalStep, alien->position.Y += verticalStep;
-        printDot(*alien);
-    }
+    errase.position = alien->position;
+    printDot(errase);
+    alien->position.X += horizontalStep, alien->position.Y += verticalStep;
+    printDot(*alien);
+    Sleep(1);
 }
 
 Dot enemiesShoot(List enemies) {

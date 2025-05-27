@@ -16,11 +16,15 @@ int main() {
         if (i % speed == 0) {
             int way = 0;
             if (i / speed % 10 > 0 && i / speed % 10 < 5) way = -1;
-            else if (i / speed % 10 > 5) way = 1; 
-            moveEnemies(&ls, way);
+            else if (i / speed % 10 > 5) way = 1;
+            for (int i = 0; i < ls.count; ++i) {
+                ls.list = ls.list->prev;
+                moveEnemy((Dot*)ls.list->data, way);
+                heroControl(&hero);
+            }
             enemiesShoot(ls);
-        }
+        } else heroControl(&hero);
         i++;
-        heroControl(&hero);
+        
     }
 }
