@@ -1,5 +1,6 @@
 CMakeFiles/space.dir/src/main.c.obj: \
  C:\Projects\VSCode\space\ invaders\src\main.c \
+ C:/Projects/VSCode/SPACEI~1/CHARAC~1/enemies.h \
  C:/Projects/VSCode/SPACEI~1/graphics/drawing.h \
  C:/Projects/VSCode/SPACEI~1/src/libraries.h \
  C:/Users/ADMIN/MinGW/w64devkit/x86_64-w64-mingw32/include/stdio.h \
@@ -285,5 +286,5 @@ CMakeFiles/space.dir/src/main.c.obj: \
  C:/Users/ADMIN/MinGW/w64devkit/x86_64-w64-mingw32/include/sys/timeb.h \
  C:/Users/ADMIN/MinGW/w64devkit/x86_64-w64-mingw32/include/sec_api/sys/timeb_s.h \
  C:/Users/ADMIN/MinGW/w64devkit/x86_64-w64-mingw32/include/pthread_time.h \
- C:/Projects/VSCode/SPACEI~1/CHARAC~1/enemies.h \
- C:/Projects/VSCode/SPACEI~1/list/list.h
+ C:/Projects/VSCode/SPACEI~1/list/list.h \
+ C:/Projects/VSCode/SPACEI~1/CHARAC~1/hero.h

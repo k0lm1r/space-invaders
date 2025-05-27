@@ -1,7 +1,7 @@
-CMakeFiles/space.dir/src/stack.c.obj: \
- C:\Projects\VSCode\space\ invaders\src\stack.c \
- C:\Projects\VSCode\space\ invaders\src\stack.h \
- C:\Projects\VSCode\space\ invaders\src\libraries.h \
+CMakeFiles/space.dir/characters/hero.c.obj: \
+ C:\Projects\VSCode\space\ invaders\characters\hero.c \
+ C:\Projects\VSCode\space\ invaders\characters\hero.h \
+ C:/Projects/VSCode/SPACEI~1/src/libraries.h \
  C:/Users/ADMIN/MinGW/w64devkit/x86_64-w64-mingw32/include/stdio.h \
  C:/Users/ADMIN/MinGW/w64devkit/x86_64-w64-mingw32/include/corecrt_stdio_config.h \
  C:/Users/ADMIN/MinGW/w64devkit/x86_64-w64-mingw32/include/corecrt.h \
@@ -27,6 +27,7 @@ CMakeFiles/space.dir/src/stack.c.obj: \
  C:/Users/ADMIN/MinGW/w64devkit/x86_64-w64-mingw32/include/malloc.h \
  C:/Users/ADMIN/MinGW/w64devkit/lib/gcc/x86_64-w64-mingw32/14.2.0/include/mm_malloc.h \
  C:/Users/ADMIN/MinGW/w64devkit/x86_64-w64-mingw32/include/errno.h \
+ C:/Users/ADMIN/MinGW/w64devkit/lib/gcc/x86_64-w64-mingw32/14.2.0/include/stdbool.h \
  C:/Users/ADMIN/MinGW/w64devkit/x86_64-w64-mingw32/include/windows.h \
  C:/Users/ADMIN/MinGW/w64devkit/x86_64-w64-mingw32/include/sdkddkver.h \
  C:/Users/ADMIN/MinGW/w64devkit/x86_64-w64-mingw32/include/excpt.h \
@@ -279,4 +280,10 @@ CMakeFiles/space.dir/src/stack.c.obj: \
  C:/Users/ADMIN/MinGW/w64devkit/x86_64-w64-mingw32/include/sec_api/stralign_s.h \
  C:/Users/ADMIN/MinGW/w64devkit/x86_64-w64-mingw32/include/winsvc.h \
  C:/Users/ADMIN/MinGW/w64devkit/x86_64-w64-mingw32/include/mcx.h \
- C:/Users/ADMIN/MinGW/w64devkit/x86_64-w64-mingw32/include/imm.h
+ C:/Users/ADMIN/MinGW/w64devkit/x86_64-w64-mingw32/include/imm.h \
+ C:/Users/ADMIN/MinGW/w64devkit/x86_64-w64-mingw32/include/time.h \
+ C:/Users/ADMIN/MinGW/w64devkit/x86_64-w64-mingw32/include/sys/timeb.h \
+ C:/Users/ADMIN/MinGW/w64devkit/x86_64-w64-mingw32/include/sec_api/sys/timeb_s.h \
+ C:/Users/ADMIN/MinGW/w64devkit/x86_64-w64-mingw32/include/pthread_time.h \
+ C:/Projects/VSCode/SPACEI~1/graphics/drawing.h \
+ C:/Projects/VSCode/SPACEI~1/list/list.h

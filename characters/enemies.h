@@ -3,5 +3,5 @@
 #include "list.h"
 
 List createEnemies();
-void moveEnemies(List *enemies, bool isLeft);
+void moveEnemies(List *enemies, int way);
 Dot enemiesShoot(List enemies);

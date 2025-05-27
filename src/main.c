@@ -1,17 +1,26 @@
-#include "drawing.h"
 #include "enemies.h"
+#include "hero.h"
 
 int main() {
     srand(time(0));
     system("cls");
     HANDLE console = GetStdHandle(STD_OUTPUT_HANDLE);
-    COORD bufferSize = {100, 100};
+    COORD bufferSize = {1000, 1000};
     SetConsoleScreenBufferSize(console, bufferSize);
-    bool a = true;
+
     List ls = createEnemies();
-    while (1) {
-        moveEnemies(&ls, a);
-        a = !a;
-        printDot(enemiesShoot(ls));
+    int i = 0, speed = 5000;
+    Dot hero = {{10, 40}, 'A'};
+
+    while(1) {
+        if (i % speed == 0) {
+            int way = 0;
+            if (i / speed % 10 > 0 && i / speed % 10 < 5) way = -1;
+            else if (i / speed % 10 > 5) way = 1; 
+            moveEnemies(&ls, way);
+            enemiesShoot(ls);
+        }
+        i++;
+        heroControl(&hero);
     }
 }

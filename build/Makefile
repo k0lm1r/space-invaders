@@ -152,6 +152,30 @@ characters/enemies.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\space.dir\build.make CMakeFiles/space.dir/characters/enemies.c.s
 .PHONY : characters/enemies.c.s
 
+characters/hero.obj: characters/hero.c.obj
+.PHONY : characters/hero.obj
+
+# target to build an object file
+characters/hero.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\space.dir\build.make CMakeFiles/space.dir/characters/hero.c.obj
+.PHONY : characters/hero.c.obj
+
+characters/hero.i: characters/hero.c.i
+.PHONY : characters/hero.i
+
+# target to preprocess a source file
+characters/hero.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\space.dir\build.make CMakeFiles/space.dir/characters/hero.c.i
+.PHONY : characters/hero.c.i
+
+characters/hero.s: characters/hero.c.s
+.PHONY : characters/hero.s
+
+# target to generate assembly for a file
+characters/hero.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\space.dir\build.make CMakeFiles/space.dir/characters/hero.c.s
+.PHONY : characters/hero.c.s
+
 graphics/drawing.obj: graphics/drawing.c.obj
 .PHONY : graphics/drawing.obj
 
@@ -236,6 +260,9 @@ help:
 	@echo ... characters/enemies.obj
 	@echo ... characters/enemies.i
 	@echo ... characters/enemies.s
+	@echo ... characters/hero.obj
+	@echo ... characters/hero.i
+	@echo ... characters/hero.s
 	@echo ... graphics/drawing.obj
 	@echo ... graphics/drawing.i
 	@echo ... graphics/drawing.s

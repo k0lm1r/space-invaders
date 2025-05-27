@@ -1,6 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/space.dir/characters/enemies.c.obj"
   "CMakeFiles/space.dir/characters/enemies.c.obj.d"
+  "CMakeFiles/space.dir/characters/hero.c.obj"
+  "CMakeFiles/space.dir/characters/hero.c.obj.d"
   "CMakeFiles/space.dir/graphics/drawing.c.obj"
   "CMakeFiles/space.dir/graphics/drawing.c.obj.d"
   "CMakeFiles/space.dir/list/list.c.obj"
