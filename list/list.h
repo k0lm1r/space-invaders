@@ -1,4 +1,6 @@
-#pragma once
+#ifndef LIST_H
+#define LIST_H
+
 #include "libraries.h"
 
 typedef struct linkedList {
@@ -15,3 +17,4 @@ typedef struct list {
 List append(List ls, void *data);
 void* delete(List *ls, int index);
 void* take(List ls, int index);
+#endif

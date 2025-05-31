@@ -1,3 +1,6 @@
+#ifndef LIBRARIES_H
+#define LIBRARIES_H
+
 #include "libraries.h"
 
 typedef struct dot {
@@ -7,3 +10,5 @@ typedef struct dot {
 
 void gotoxy(int x, int y);
 void printDot(Dot printintItem);
+void clean(COORD position);
+#endif

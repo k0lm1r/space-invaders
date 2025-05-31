@@ -20,9 +20,7 @@ List createEnemies() {
 
 void moveEnemy(Dot *alien, int way) {
     int horizontalStep = way, verticalStep = way == 0 ? 1 : 0;
-    Dot errase = {{0, 0}, ' '};
-    errase.position = alien->position;
-    printDot(errase);
+    clean(alien->position);
     alien->position.X += horizontalStep, alien->position.Y += verticalStep;
     printDot(*alien);
     Sleep(1);
@@ -46,4 +44,14 @@ Dot enemiesShoot(List enemies) {
     Dot shot = {patencialShotPos[shotPos], 'i'};
     printDot(shot);
     return shot;
+}
+
+void moveEnemiesShot(Dot *hero, Dot *enemiesShot, Dot *heroesShot) {
+    clean(enemiesShot->position);
+    if (enemiesShot->position.Y == hero->position.Y - 1) hero->item = 'X', enemiesShot->item = ' ';
+    else {
+        if (enemiesShot->position.Y == heroesShot->position.Y - 1) heroesShot->item = enemiesShot->item = 'X';
+        enemiesShot->position.Y++;
+    }
+    printDot(*enemiesShot);
 }

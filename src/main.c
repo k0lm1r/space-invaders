@@ -11,6 +11,7 @@ int main() {
     List ls = createEnemies();
     int i = 0, speed = 5000;
     Dot hero = {{10, 40}, 'A'};
+    Dot shot = {{-1, -1}, 'i'}, a = {{0, 0}, '!'};
 
     while(1) {
         if (i % speed == 0) {
@@ -21,9 +22,12 @@ int main() {
                 ls.list = ls.list->prev;
                 moveEnemy((Dot*)ls.list->data, way);
                 heroControl(&hero);
+                moveEnemiesShot(&hero, &shot, &a);
             }
-            enemiesShoot(ls);
-        } else heroControl(&hero);
+            if (shot.position.Y == -1) shot = enemiesShoot(ls);
+            
+        } else heroControl(&hero), moveEnemiesShot(&hero, &shot, &a);
+        
         i++;
         
     }

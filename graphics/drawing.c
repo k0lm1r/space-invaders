@@ -11,3 +11,8 @@ void printDot(Dot printingDot) {
     gotoxy(printingDot.position.X, printingDot.position.Y);
     printf("%c", printingDot.item);
 }
+
+void clean(COORD position) {
+    Dot errase = {position, ' '};
+    printDot(errase);
+}
