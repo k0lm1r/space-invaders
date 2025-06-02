@@ -14,9 +14,9 @@ int main() {
         system("cls");
         choice = 0;
         
-        puts("1 - Start.\n2 - Help.3 - Exit.");
+        puts("1 - Start.\n2 - Help.\n3 - Exit.");
         while(choice < '1' || choice > '3') choice = _getch();
         if (choice == '1') score = game(score);
-        else if (choice == '2') puts("H, O - Enemies.\nA - Player.\ni - Enemies shots.\n! - Players shot.\n\nControls: Left Arrow, Right Arrow, 'a', 'd' - Move.\nSpace, Up Arrow - Shoot."), _getch();     
+        else if (choice == '2') puts("H, O - Enemies.\nA - Player.\ni - Enemies shots.\n! - Players shot.\n\nControls:\nLeft Arrow, Right Arrow, 'a', 'd' - Move.\nSpace, Up Arrow - Shoot.\nPress any key..."), _getch();     
     } while (choice != '3');
 }
