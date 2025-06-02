@@ -31,7 +31,7 @@ bool isDefeat(Dot hero, Dot lastEnemy, int score) {
 }
 
 int game() {
-    Dot hero = {{(MAX_X - MIN_X) / 2, MAX_Y}, 'A'}, heroesShot = {{-1, MIN_Y}, '!'}, lastEnemy;
+    Dot hero = {{(MAX_X - MIN_X) / 2, MAX_Y}, 'A'}, heroesShot = {{-1, MIN_Y + 1}, '!'}, lastEnemy;
     List enemies = createEnemies(), enemiesShots = {0, NULL};
     int enemiesCountBefore = enemies.count, score = 0, i = 0;
     printBorders(MIN_X, MAX_X);
@@ -48,7 +48,7 @@ int game() {
                 moveEnemy(currentEnemy, way);
                 COORD potencialShotPos = heroControl(&hero);
 
-                if (heroesShot.position.Y == MIN_Y || heroesShot.item == 'X') {
+                if (heroesShot.position.Y == MIN_Y + 1 || heroesShot.item == 'X') {
                     clean(heroesShot.position), heroesShot.position = potencialShotPos;
                     if (heroesShot.item == 'X') heroesShot.item = '!';
                 }
