@@ -3,7 +3,7 @@
 
 #include "drawing.h"
 #include "list.h"
-#define START_POS 6
+#define START_POS 7
 
 List createEnemies();
 void moveEnemy(Dot *alien, int way);

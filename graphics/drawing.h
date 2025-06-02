@@ -5,7 +5,7 @@
 #define MIN_Y 1
 #define MAX_Y 30
 #define MIN_X 0
-#define MAX_X 27
+#define MAX_X 28
 
 typedef struct dot {
     COORD position;

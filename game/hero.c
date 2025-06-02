@@ -24,12 +24,12 @@ bool wasHit(List *enemies, Dot *heroesShot) {
             return true;
         }
     }
-    heroesShot->position.Y = max(heroesShot->position.Y - 1, MIN_Y + 1);
+    heroesShot->position.Y = max(heroesShot->position.Y - 1, MIN_Y);
     return false;
 }
 
 void moveHeroesShot(List *enemiesShotsList, List *enemies, Dot* heroesShot) {
     clean(heroesShot->position);
     if (wasHit(enemies, heroesShot) || wasHit(enemiesShotsList, heroesShot)) heroesShot->item = 'X';
-    if (heroesShot->position.Y != MIN_Y + 1) printDot(*heroesShot);
+    if (heroesShot->position.Y != MIN_Y) printDot(*heroesShot);
 }

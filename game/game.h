@@ -6,6 +6,6 @@
 #include "hero.h"
 #include "list.h"
 
-int game();
+int game(int score);
 
 #endif
