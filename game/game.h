@@ -7,5 +7,6 @@
 #include "list.h"
 
 int game(int score);
+void printWellcomeScreen();
 
 #endif

@@ -2,7 +2,7 @@
 
 COORD heroControl(Dot *hero) {
     COORD shotPosition = {-1, MIN_Y}, currentHeroPos = hero->position;
-    if (_kbhit()) {
+    if (kbhit()) {
         int key = _getch();
         switch(key) {
             case 'a': case 75: hero->position.X = max(hero->position.X - 1, MIN_X + 1); break;
