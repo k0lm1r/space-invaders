@@ -24,7 +24,7 @@ bool isDefeat(Dot hero, Dot lastEnemy, int score) {
         system("cls");
         gotoxy((MAX_X - MIN_X) / 2, MAX_Y / 2);
         puts("GAME OVER!");
-        printScore(score, (MAX_X - MIN_X) / 2, MAX_Y / 2 + 1); Sleep(10); _getch();
+        printScore(score, (MAX_X - MIN_X) / 2, MAX_Y / 2 + 1); Sleep(1000); _getch();
         return true;
     }
     return false;
@@ -74,7 +74,7 @@ int game(int score) {
     if (enemies.count == 0) {
         gotoxy((MAX_X - MIN_X) / 2, (MAX_Y - MIN_Y) / 2);
         puts("Congratulation!");
-        printScore(score, (MAX_X - MIN_X) / 2, (MAX_Y - MIN_Y) / 2); Sleep(10); _getch();
+        printScore(score, (MAX_X - MIN_X) / 2, (MAX_Y - MIN_Y) / 2); Sleep(1000); _getch();
         return score;
     }
     return 0;
