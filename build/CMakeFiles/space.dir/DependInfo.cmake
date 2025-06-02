@@ -8,8 +8,9 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "C:/Projects/VSCode/space invaders/characters/enemies.c" "CMakeFiles/space.dir/characters/enemies.c.obj" "gcc" "CMakeFiles/space.dir/characters/enemies.c.obj.d"
-  "C:/Projects/VSCode/space invaders/characters/hero.c" "CMakeFiles/space.dir/characters/hero.c.obj" "gcc" "CMakeFiles/space.dir/characters/hero.c.obj.d"
+  "C:/Projects/VSCode/space invaders/game/enemies.c" "CMakeFiles/space.dir/game/enemies.c.obj" "gcc" "CMakeFiles/space.dir/game/enemies.c.obj.d"
+  "C:/Projects/VSCode/space invaders/game/game.c" "CMakeFiles/space.dir/game/game.c.obj" "gcc" "CMakeFiles/space.dir/game/game.c.obj.d"
+  "C:/Projects/VSCode/space invaders/game/hero.c" "CMakeFiles/space.dir/game/hero.c.obj" "gcc" "CMakeFiles/space.dir/game/hero.c.obj.d"
   "C:/Projects/VSCode/space invaders/graphics/drawing.c" "CMakeFiles/space.dir/graphics/drawing.c.obj" "gcc" "CMakeFiles/space.dir/graphics/drawing.c.obj.d"
   "C:/Projects/VSCode/space invaders/list/list.c" "CMakeFiles/space.dir/list/list.c.obj" "gcc" "CMakeFiles/space.dir/list/list.c.obj.d"
   "C:/Projects/VSCode/space invaders/src/main.c" "CMakeFiles/space.dir/src/main.c.obj" "gcc" "CMakeFiles/space.dir/src/main.c.obj.d"

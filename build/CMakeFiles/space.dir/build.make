@@ -116,43 +116,59 @@ CMakeFiles/space.dir/graphics/drawing.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/space.dir/graphics/drawing.c.s"
 	C:\Users\ADMIN\MinGW\w64devkit\bin\cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "C:\Projects\VSCode\space invaders\graphics\drawing.c" -o CMakeFiles\space.dir\graphics\drawing.c.s
 
-CMakeFiles/space.dir/characters/enemies.c.obj: CMakeFiles/space.dir/flags.make
-CMakeFiles/space.dir/characters/enemies.c.obj: CMakeFiles/space.dir/includes_C.rsp
-CMakeFiles/space.dir/characters/enemies.c.obj: C:/Projects/VSCode/space\ invaders/characters/enemies.c
-CMakeFiles/space.dir/characters/enemies.c.obj: CMakeFiles/space.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Projects\VSCode\space invaders\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/space.dir/characters/enemies.c.obj"
-	C:\Users\ADMIN\MinGW\w64devkit\bin\cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/space.dir/characters/enemies.c.obj -MF CMakeFiles\space.dir\characters\enemies.c.obj.d -o CMakeFiles\space.dir\characters\enemies.c.obj -c "C:\Projects\VSCode\space invaders\characters\enemies.c"
+CMakeFiles/space.dir/game/enemies.c.obj: CMakeFiles/space.dir/flags.make
+CMakeFiles/space.dir/game/enemies.c.obj: CMakeFiles/space.dir/includes_C.rsp
+CMakeFiles/space.dir/game/enemies.c.obj: C:/Projects/VSCode/space\ invaders/game/enemies.c
+CMakeFiles/space.dir/game/enemies.c.obj: CMakeFiles/space.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Projects\VSCode\space invaders\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/space.dir/game/enemies.c.obj"
+	C:\Users\ADMIN\MinGW\w64devkit\bin\cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/space.dir/game/enemies.c.obj -MF CMakeFiles\space.dir\game\enemies.c.obj.d -o CMakeFiles\space.dir\game\enemies.c.obj -c "C:\Projects\VSCode\space invaders\game\enemies.c"
 
-CMakeFiles/space.dir/characters/enemies.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/space.dir/characters/enemies.c.i"
-	C:\Users\ADMIN\MinGW\w64devkit\bin\cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "C:\Projects\VSCode\space invaders\characters\enemies.c" > CMakeFiles\space.dir\characters\enemies.c.i
+CMakeFiles/space.dir/game/enemies.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/space.dir/game/enemies.c.i"
+	C:\Users\ADMIN\MinGW\w64devkit\bin\cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "C:\Projects\VSCode\space invaders\game\enemies.c" > CMakeFiles\space.dir\game\enemies.c.i
 
-CMakeFiles/space.dir/characters/enemies.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/space.dir/characters/enemies.c.s"
-	C:\Users\ADMIN\MinGW\w64devkit\bin\cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "C:\Projects\VSCode\space invaders\characters\enemies.c" -o CMakeFiles\space.dir\characters\enemies.c.s
+CMakeFiles/space.dir/game/enemies.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/space.dir/game/enemies.c.s"
+	C:\Users\ADMIN\MinGW\w64devkit\bin\cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "C:\Projects\VSCode\space invaders\game\enemies.c" -o CMakeFiles\space.dir\game\enemies.c.s
 
-CMakeFiles/space.dir/characters/hero.c.obj: CMakeFiles/space.dir/flags.make
-CMakeFiles/space.dir/characters/hero.c.obj: CMakeFiles/space.dir/includes_C.rsp
-CMakeFiles/space.dir/characters/hero.c.obj: C:/Projects/VSCode/space\ invaders/characters/hero.c
-CMakeFiles/space.dir/characters/hero.c.obj: CMakeFiles/space.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Projects\VSCode\space invaders\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/space.dir/characters/hero.c.obj"
-	C:\Users\ADMIN\MinGW\w64devkit\bin\cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/space.dir/characters/hero.c.obj -MF CMakeFiles\space.dir\characters\hero.c.obj.d -o CMakeFiles\space.dir\characters\hero.c.obj -c "C:\Projects\VSCode\space invaders\characters\hero.c"
+CMakeFiles/space.dir/game/hero.c.obj: CMakeFiles/space.dir/flags.make
+CMakeFiles/space.dir/game/hero.c.obj: CMakeFiles/space.dir/includes_C.rsp
+CMakeFiles/space.dir/game/hero.c.obj: C:/Projects/VSCode/space\ invaders/game/hero.c
+CMakeFiles/space.dir/game/hero.c.obj: CMakeFiles/space.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Projects\VSCode\space invaders\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/space.dir/game/hero.c.obj"
+	C:\Users\ADMIN\MinGW\w64devkit\bin\cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/space.dir/game/hero.c.obj -MF CMakeFiles\space.dir\game\hero.c.obj.d -o CMakeFiles\space.dir\game\hero.c.obj -c "C:\Projects\VSCode\space invaders\game\hero.c"
 
-CMakeFiles/space.dir/characters/hero.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/space.dir/characters/hero.c.i"
-	C:\Users\ADMIN\MinGW\w64devkit\bin\cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "C:\Projects\VSCode\space invaders\characters\hero.c" > CMakeFiles\space.dir\characters\hero.c.i
+CMakeFiles/space.dir/game/hero.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/space.dir/game/hero.c.i"
+	C:\Users\ADMIN\MinGW\w64devkit\bin\cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "C:\Projects\VSCode\space invaders\game\hero.c" > CMakeFiles\space.dir\game\hero.c.i
 
-CMakeFiles/space.dir/characters/hero.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/space.dir/characters/hero.c.s"
-	C:\Users\ADMIN\MinGW\w64devkit\bin\cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "C:\Projects\VSCode\space invaders\characters\hero.c" -o CMakeFiles\space.dir\characters\hero.c.s
+CMakeFiles/space.dir/game/hero.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/space.dir/game/hero.c.s"
+	C:\Users\ADMIN\MinGW\w64devkit\bin\cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "C:\Projects\VSCode\space invaders\game\hero.c" -o CMakeFiles\space.dir\game\hero.c.s
+
+CMakeFiles/space.dir/game/game.c.obj: CMakeFiles/space.dir/flags.make
+CMakeFiles/space.dir/game/game.c.obj: CMakeFiles/space.dir/includes_C.rsp
+CMakeFiles/space.dir/game/game.c.obj: C:/Projects/VSCode/space\ invaders/game/game.c
+CMakeFiles/space.dir/game/game.c.obj: CMakeFiles/space.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Projects\VSCode\space invaders\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/space.dir/game/game.c.obj"
+	C:\Users\ADMIN\MinGW\w64devkit\bin\cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/space.dir/game/game.c.obj -MF CMakeFiles\space.dir\game\game.c.obj.d -o CMakeFiles\space.dir\game\game.c.obj -c "C:\Projects\VSCode\space invaders\game\game.c"
+
+CMakeFiles/space.dir/game/game.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/space.dir/game/game.c.i"
+	C:\Users\ADMIN\MinGW\w64devkit\bin\cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "C:\Projects\VSCode\space invaders\game\game.c" > CMakeFiles\space.dir\game\game.c.i
+
+CMakeFiles/space.dir/game/game.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/space.dir/game/game.c.s"
+	C:\Users\ADMIN\MinGW\w64devkit\bin\cc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "C:\Projects\VSCode\space invaders\game\game.c" -o CMakeFiles\space.dir\game\game.c.s
 
 # Object files for target space
 space_OBJECTS = \
 "CMakeFiles/space.dir/src/main.c.obj" \
 "CMakeFiles/space.dir/list/list.c.obj" \
 "CMakeFiles/space.dir/graphics/drawing.c.obj" \
-"CMakeFiles/space.dir/characters/enemies.c.obj" \
-"CMakeFiles/space.dir/characters/hero.c.obj"
+"CMakeFiles/space.dir/game/enemies.c.obj" \
+"CMakeFiles/space.dir/game/hero.c.obj" \
+"CMakeFiles/space.dir/game/game.c.obj"
 
 # External object files for target space
 space_EXTERNAL_OBJECTS =
@@ -160,13 +176,14 @@ space_EXTERNAL_OBJECTS =
 space.exe: CMakeFiles/space.dir/src/main.c.obj
 space.exe: CMakeFiles/space.dir/list/list.c.obj
 space.exe: CMakeFiles/space.dir/graphics/drawing.c.obj
-space.exe: CMakeFiles/space.dir/characters/enemies.c.obj
-space.exe: CMakeFiles/space.dir/characters/hero.c.obj
+space.exe: CMakeFiles/space.dir/game/enemies.c.obj
+space.exe: CMakeFiles/space.dir/game/hero.c.obj
+space.exe: CMakeFiles/space.dir/game/game.c.obj
 space.exe: CMakeFiles/space.dir/build.make
 space.exe: CMakeFiles/space.dir/linkLibs.rsp
 space.exe: CMakeFiles/space.dir/objects1.rsp
 space.exe: CMakeFiles/space.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="C:\Projects\VSCode\space invaders\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Linking C executable space.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="C:\Projects\VSCode\space invaders\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Linking C executable space.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\space.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

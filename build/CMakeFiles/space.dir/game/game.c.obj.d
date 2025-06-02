@@ -1,6 +1,6 @@
-CMakeFiles/space.dir/src/main.c.obj: \
- C:\Projects\VSCode\space\ invaders\src\main.c \
- C:/Projects/VSCode/SPACEI~1/game/game.h \
+CMakeFiles/space.dir/game/game.c.obj: \
+ C:\Projects\VSCode\space\ invaders\game\game.c \
+ C:\Projects\VSCode\space\ invaders\game\game.h \
  C:/Projects/VSCode/SPACEI~1/src/libraries.h \
  C:/Users/ADMIN/MinGW/w64devkit/x86_64-w64-mingw32/include/stdio.h \
  C:/Users/ADMIN/MinGW/w64devkit/x86_64-w64-mingw32/include/corecrt_stdio_config.h \
@@ -285,7 +285,7 @@ CMakeFiles/space.dir/src/main.c.obj: \
  C:/Users/ADMIN/MinGW/w64devkit/x86_64-w64-mingw32/include/sys/timeb.h \
  C:/Users/ADMIN/MinGW/w64devkit/x86_64-w64-mingw32/include/sec_api/sys/timeb_s.h \
  C:/Users/ADMIN/MinGW/w64devkit/x86_64-w64-mingw32/include/pthread_time.h \
- C:/Projects/VSCode/SPACEI~1/game/enemies.h \
+ C:\Projects\VSCode\space\ invaders\game\enemies.h \
  C:/Projects/VSCode/SPACEI~1/graphics/drawing.h \
  C:/Projects/VSCode/SPACEI~1/list/list.h \
- C:/Projects/VSCode/SPACEI~1/game/hero.h
+ C:\Projects\VSCode\space\ invaders\game\hero.h

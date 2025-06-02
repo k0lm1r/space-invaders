@@ -128,53 +128,77 @@ space/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\space.dir\build.make CMakeFiles/space.dir/build
 .PHONY : space/fast
 
-characters/enemies.obj: characters/enemies.c.obj
-.PHONY : characters/enemies.obj
+game/enemies.obj: game/enemies.c.obj
+.PHONY : game/enemies.obj
 
 # target to build an object file
-characters/enemies.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\space.dir\build.make CMakeFiles/space.dir/characters/enemies.c.obj
-.PHONY : characters/enemies.c.obj
+game/enemies.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\space.dir\build.make CMakeFiles/space.dir/game/enemies.c.obj
+.PHONY : game/enemies.c.obj
 
-characters/enemies.i: characters/enemies.c.i
-.PHONY : characters/enemies.i
+game/enemies.i: game/enemies.c.i
+.PHONY : game/enemies.i
 
 # target to preprocess a source file
-characters/enemies.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\space.dir\build.make CMakeFiles/space.dir/characters/enemies.c.i
-.PHONY : characters/enemies.c.i
+game/enemies.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\space.dir\build.make CMakeFiles/space.dir/game/enemies.c.i
+.PHONY : game/enemies.c.i
 
-characters/enemies.s: characters/enemies.c.s
-.PHONY : characters/enemies.s
+game/enemies.s: game/enemies.c.s
+.PHONY : game/enemies.s
 
 # target to generate assembly for a file
-characters/enemies.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\space.dir\build.make CMakeFiles/space.dir/characters/enemies.c.s
-.PHONY : characters/enemies.c.s
+game/enemies.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\space.dir\build.make CMakeFiles/space.dir/game/enemies.c.s
+.PHONY : game/enemies.c.s
 
-characters/hero.obj: characters/hero.c.obj
-.PHONY : characters/hero.obj
+game/game.obj: game/game.c.obj
+.PHONY : game/game.obj
 
 # target to build an object file
-characters/hero.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\space.dir\build.make CMakeFiles/space.dir/characters/hero.c.obj
-.PHONY : characters/hero.c.obj
+game/game.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\space.dir\build.make CMakeFiles/space.dir/game/game.c.obj
+.PHONY : game/game.c.obj
 
-characters/hero.i: characters/hero.c.i
-.PHONY : characters/hero.i
+game/game.i: game/game.c.i
+.PHONY : game/game.i
 
 # target to preprocess a source file
-characters/hero.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\space.dir\build.make CMakeFiles/space.dir/characters/hero.c.i
-.PHONY : characters/hero.c.i
+game/game.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\space.dir\build.make CMakeFiles/space.dir/game/game.c.i
+.PHONY : game/game.c.i
 
-characters/hero.s: characters/hero.c.s
-.PHONY : characters/hero.s
+game/game.s: game/game.c.s
+.PHONY : game/game.s
 
 # target to generate assembly for a file
-characters/hero.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\space.dir\build.make CMakeFiles/space.dir/characters/hero.c.s
-.PHONY : characters/hero.c.s
+game/game.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\space.dir\build.make CMakeFiles/space.dir/game/game.c.s
+.PHONY : game/game.c.s
+
+game/hero.obj: game/hero.c.obj
+.PHONY : game/hero.obj
+
+# target to build an object file
+game/hero.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\space.dir\build.make CMakeFiles/space.dir/game/hero.c.obj
+.PHONY : game/hero.c.obj
+
+game/hero.i: game/hero.c.i
+.PHONY : game/hero.i
+
+# target to preprocess a source file
+game/hero.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\space.dir\build.make CMakeFiles/space.dir/game/hero.c.i
+.PHONY : game/hero.c.i
+
+game/hero.s: game/hero.c.s
+.PHONY : game/hero.s
+
+# target to generate assembly for a file
+game/hero.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\space.dir\build.make CMakeFiles/space.dir/game/hero.c.s
+.PHONY : game/hero.c.s
 
 graphics/drawing.obj: graphics/drawing.c.obj
 .PHONY : graphics/drawing.obj
@@ -257,12 +281,15 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... space
-	@echo ... characters/enemies.obj
-	@echo ... characters/enemies.i
-	@echo ... characters/enemies.s
-	@echo ... characters/hero.obj
-	@echo ... characters/hero.i
-	@echo ... characters/hero.s
+	@echo ... game/enemies.obj
+	@echo ... game/enemies.i
+	@echo ... game/enemies.s
+	@echo ... game/game.obj
+	@echo ... game/game.i
+	@echo ... game/game.s
+	@echo ... game/hero.obj
+	@echo ... game/hero.i
+	@echo ... game/hero.s
 	@echo ... graphics/drawing.obj
 	@echo ... graphics/drawing.i
 	@echo ... graphics/drawing.s

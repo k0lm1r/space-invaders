@@ -1,44 +1,35 @@
 #include "hero.h"
 
-COORD heroShoot(COORD heroesPos) {
-    Dot shot = {{heroesPos.X, heroesPos.Y - 1}, '!'};
-    printDot(shot);
-    return shot.position;
-}
-
 COORD heroControl(Dot *hero) {
-    COORD shotPosition = {-1, -1}, errasePos = hero->position;
+    COORD shotPosition = {-1, MIN_Y}, currentHeroPos = hero->position;
     if (_kbhit()) {
         int key = _getch();
         switch(key) {
-            case 'a': case 75: hero->position.X = max(hero->position.X - 1, 0); break;
-            case 'd': case 77: hero->position.X = min(hero->position.X + 1, 27); break;
-            case 32: case 72: shotPosition = heroShoot(hero->position);
+            case 'a': case 75: hero->position.X = max(hero->position.X - 1, MIN_X + 1); break;
+            case 'd': case 77: hero->position.X = min(hero->position.X + 1, MAX_X - 2); break;
+            case 32: case 72: shotPosition = currentHeroPos; shotPosition.Y--;
         }
     }
-    clean(errasePos);
+    clean(currentHeroPos);
     printDot(*hero);
     return shotPosition;
 }
 
 bool wasHit(List *enemies, Dot *heroesShot) {
-    LinkedList *currentNode = enemies->list;
-    for (int i = 0; i < enemies->count; currentNode = currentNode->next, ++i) {
-        Dot currentEnemy = *(Dot*)currentNode->data;
-        if (heroesShot->position.Y == currentEnemy.position.Y + 1) {
-            heroesShot->item = 'X';
+    for (int i = 0; i < enemies->count; ++i) {
+        Dot currentEnemy = *(Dot*)take(*enemies, i);
+        if (heroesShot->position.Y == currentEnemy.position.Y && heroesShot->position.X == currentEnemy.position.X) {
             clean(currentEnemy.position);
             delete(enemies, i);
             return true;
         }
     }
-    heroesShot->position.Y--;
+    heroesShot->position.Y = max(heroesShot->position.Y - 1, MIN_Y);
     return false;
 }
 
 void moveHeroesShot(List *enemiesShotsList, List *enemies, Dot* heroesShot) {
     clean(heroesShot->position);
-    wasHit(enemies, heroesShot);
-    wasHit(enemiesShotsList, heroesShot);
-    printDot(*heroesShot);
+    if (wasHit(enemies, heroesShot) || wasHit(enemiesShotsList, heroesShot)) heroesShot->item = 'X';
+    if (heroesShot->position.Y != MIN_Y) printDot(*heroesShot);
 }

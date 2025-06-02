@@ -24,7 +24,13 @@ List append(List ls, void *data) {
 void *delete(List *ls, int index) {
     LinkedList *deletedNode = ls->list;
     void *data;
-
+    if (ls->count == 1) {
+        ls->count = 0;
+        data = ls->list->data;
+        free(ls->list); 
+        ls->list = NULL; 
+        return data;
+    }
     if (index == 0 || ls->count + index == 0) {
         ls->list = ls->list->next;
     } else if (index > 0) {
