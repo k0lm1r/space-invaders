@@ -6,7 +6,6 @@ int main() {
     HANDLE console = GetStdHandle(STD_OUTPUT_HANDLE);
     COORD bufferSize = {1000, 1000};
     SetConsoleScreenBufferSize(console, bufferSize);
-    ShowCaret(0);
     ShowCursor(0);
 
     char choice = 0;
@@ -14,8 +13,10 @@ int main() {
     do {
         system("cls");
         choice = 0;
-        puts("1 - Start.\n2 - Exit.");
-        while(choice < '1' || choice > '2') choice = _getch();
-        if (choice == '1') score = game(score);        
-    } while (choice != '2');
+        
+        puts("1 - Start.\n2 - Help.3 - Exit.");
+        while(choice < '1' || choice > '3') choice = _getch();
+        if (choice == '1') score = game(score);
+        else if (choice == '2') puts("H, O - Enemies.\nA - Player.\ni - Enemies shots.\n! - Players shot.\n\nControls: Left Arrow, Right Arrow, 'a', 'd' - Move.\nSpace, Up Arrow - Shoot."), _getch();     
+    } while (choice != '3');
 }

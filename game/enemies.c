@@ -18,6 +18,21 @@ List createEnemies() {
     return aliensList;
 }
 
+int chooseWay(List enemies, int prevStep) {
+    int way = 0;
+    Dot currentAlien = *(Dot *)take(enemies, 0);
+    int mostLeftPos = currentAlien.position.X, mostRightPos = currentAlien.position.X;
+
+    for (int i = 1; i < enemies.count; ++i) {
+        currentAlien = *(Dot *)take(enemies, i);
+        if (currentAlien.position.X < mostLeftPos) mostLeftPos = currentAlien.position.X;
+        else if (currentAlien.position.X > mostRightPos) mostRightPos = currentAlien.position.X;
+    }
+    if (prevStep != 0 && mostLeftPos > MIN_X + 1 && mostRightPos < MAX_X - 2) way = prevStep;
+    else if (prevStep == 0) way = mostLeftPos > MIN_X + 1 ? -1 : 1;
+    return way;
+}
+
 void moveEnemy(Dot *alien, int way) {
     int horizontalStep = way, verticalStep = way == 0 ? 1 : 0;
     clean(alien->position);

@@ -34,18 +34,13 @@ int game(int score) {
     system("cls");
     Dot hero = {{(MAX_X - MIN_X) / 2, MAX_Y}, 'A'}, heroesShot = {{-1, MIN_Y}, '!'}, lastEnemy;
     List enemies = createEnemies(), enemiesShots = {0, NULL};
-    int enemiesCountBefore = enemies.count, i = 0;
+    int enemiesCountBefore = enemies.count, way = 0;
     printBorders(MIN_X, MAX_X);
 
     do {
         printScore(score, (MAX_X - MIN_X) / 2, MIN_Y - 1);
 
-        int way = 0;
-        if (i % 11 > 0 && i % 11 < 6)
-            way = -1;
-        else if (i % 11 >= 6)
-            way = 1;
-
+        way = chooseWay(enemies, way);
         for (int j = 1; j <= enemies.count; ++j) {
             Dot *currentEnemy = (Dot *)take(enemies, -j);
             moveEnemy(currentEnemy, way);
@@ -67,13 +62,12 @@ int game(int score) {
                 score += (enemiesCountBefore - enemies.count) * 100;
                 enemiesCountBefore = enemies.count;
             }
-            if (enemiesShots.count < min(3, enemies.count)) {
+            if (enemiesShots.count < min(3, enemies.count / 5)) {
                 Dot *shot_p = (Dot *)malloc(sizeof(Dot));
                 *shot_p = enemiesShoot(enemies);
                 enemiesShots = append(enemiesShots, shot_p);
             }
         }
-        i++;
         lastEnemy = *(Dot *)take(enemies, -1);
     } while (enemies.count > 0 && !isDefeat(hero, lastEnemy, score));
 
