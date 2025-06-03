@@ -4,9 +4,10 @@ void printWellcomeScreen() {
     char *history[] = {"The year 2245. The Earth is at risk.", "Army of alien ships invaded the solar system.", "They methodically destroy orbital stations and colonies,", "Approaching the Earth.", "You are the last pilot of the squadron 'Phoenix. Your cruiser 'Odysseus' is the only one,", "Who can stop the invasion.", "Task: to break through the waves of enemies,", "Into battle, captain! (Press any key)"};
     for (int i = 0; i < 8; ++i) {
         printf("%s\n", history[i]);
-        if (!kbhit()) Sleep(1000);
+        if (kbhit()) getch();
+        else Sleep(1000);
     }
-    _getch();
+    getch();
 }
 
 void printBorders(int left, int right) {

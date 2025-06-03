@@ -3,7 +3,7 @@
 COORD heroControl(Dot *hero) {
     COORD shotPosition = {-1, MIN_Y}, currentHeroPos = hero->position;
     if (kbhit()) {
-        int key = _getch();
+        int key = getch();
         switch(key) {
             case 'a': case 75: hero->position.X = max(hero->position.X - 1, MIN_X + 1); break;
             case 'd': case 77: hero->position.X = min(hero->position.X + 1, MAX_X - 2); break;

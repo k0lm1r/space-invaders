@@ -17,8 +17,10 @@ int main() {
         if (score == 0) puts("1 - Start.");
         else puts("1 - Continue.");
         puts("2 - Help.\n3 - Exit.");
-        while(choice < '1' || choice > '3') choice = _getch();
-        if (choice == '1') score = game(score);
-        else if (choice == '2') puts("H, O - Enemies.\nA - Player.\ni - Enemies shots.\n! - Players shot.\n\nControls:\nLeft Arrow, Right Arrow, 'a', 'd' - Move.\nSpace, Up Arrow - Shoot.\nPress any key..."), _getch();     
+        while(choice < '1' || choice > '3') choice = getch();
+        switch(choice) {
+            case '1': score = game(score); break;
+            case '2': puts("H, O - Enemies.\nA - Player.\ni - Enemies shots.\n! - Players shot.\n\nControls:\nLeft Arrow, Right Arrow, 'a', 'd' - Move.\nSpace, Up Arrow - Shoot.\nPress any key..."), getch();
+        }
     } while (choice != '3');
 }

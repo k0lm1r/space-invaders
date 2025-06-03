@@ -289,6 +289,7 @@ CMakeFiles/space.dir/game/enemies.c.obj: C:/Projects/VSCode/space\ invaders/game
 CMakeFiles/space.dir/game/game.c.obj: C:/Projects/VSCode/space\ invaders/game/game.c \
   C:/Projects/VSCode/space\ invaders/graphics/drawing.h \
   C:/Projects/VSCode/space\ invaders/list/list.h \
+  C:/Projects/VSCode/space\ invaders/src/functions.h \
   C:/Projects/VSCode/space\ invaders/src/libraries.h \
   C:/Users/ADMIN/MinGW/w64devkit/lib/gcc/x86_64-w64-mingw32/14.2.0/include/adxintrin.h \
   C:/Users/ADMIN/MinGW/w64devkit/lib/gcc/x86_64-w64-mingw32/14.2.0/include/ammintrin.h \
@@ -2127,6 +2128,8 @@ C:/Users/ADMIN/MinGW/w64devkit/x86_64-w64-mingw32/include/rpcnsip.h:
 C:/Users/ADMIN/MinGW/w64devkit/x86_64-w64-mingw32/include/msxml.h:
 
 C:/Users/ADMIN/MinGW/w64devkit/x86_64-w64-mingw32/include/namedpipeapi.h:
+
+C:/Projects/VSCode/space\ invaders/src/functions.h:
 
 C:/Users/ADMIN/MinGW/w64devkit/x86_64-w64-mingw32/include/namespaceapi.h:
 
