@@ -27,7 +27,7 @@ void *delete(List *ls, int index) {
     if (ls->count == 1) {
         ls->count = 0;
         data = ls->list->data;
-        free(ls->list); 
+        free(ls->list);
         ls->list = NULL; 
         return data;
     }
